@@ -227,3 +227,155 @@ DestinationB_Line:
         goto DestinationB_Line;
     }
 }
+int Train()
+{
+DestinationT_Line:
+    printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
+    printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    printf("\n\t\t\t        =                  WELCOME                  =");
+    printf("\n\t\t\t        =                     TO                    =");
+    printf("\n\t\t\t        =                  AFR Train                  =");
+    printf("\n\t\t\t        =               Ticket Booking              =");
+    printf("\n\t\t\t        =                                           =");
+    printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
+
+
+    printf("\n\n\n\t\t\tAvailable Trains:");
+    printf("\n\n\t\t\t##Inside Dhaka Division:");
+    printf("\n\t\t\t\t1. Kumalapur to Narayangonj");
+    printf("\n\t\t\t\t2. Kumalapur to Keranigonj");
+    printf("\n\t\t\t\t3. Kumalapur to Old Airport Station");
+    printf("\n\n\t\t\t##Outside Dhaka:");
+    printf("\n\t\t\t\t4. Dhaka to Sylhet");
+    printf("\n\t\t\t\t5. Dhaka to Comilla");
+    printf("\n\t\t\t\t6. Dhaka to Rajshahi");
+    printf("\n\t\t\t\t7. Dhaka to Khulna");
+    int dest;
+    printf("\n\t\t\tEnter Your Destination or 0 to exit ");
+    scanf("%d", &dest);
+    system("cls");
+
+    if(dest==0)
+    {
+        return 0;
+    }
+    else if(dest==1||dest==2||dest==3|| dest==4||dest==5||dest==6||dest==7)
+    {
+        return 1;
+    }
+    else
+    {
+        system("cls");
+        goto DestinationT_Line;
+    }
+}
+int Plane()
+{
+DestinationP_Line:
+    printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
+    printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    printf("\n\t\t\t        =                  WELCOME                  =");
+    printf("\n\t\t\t        =                     TO                    =");
+    printf("\n\t\t\t        =                  AFR Air                  =");
+    printf("\n\t\t\t        =               Ticket Booking              =");
+    printf("\n\t\t\t        =                                           =");
+    printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
+
+
+    printf("\n\n\n\t\t\tAvailable Flights:");
+    printf("\n\n\t\t\t##Domestic Flights:");
+    printf("\n\t\t\t\t1. Dhaka to Chittagong");
+    printf("\n\t\t\t\t2. Dhaka to Cox's Bazar");
+    printf("\n\t\t\t\t3. Dhaka to Sylhet");
+    printf("\n\n\t\t\t##International Flights:");
+    printf("\n\t\t\t\t4. Dhaka to Delhi");
+    printf("\n\t\t\t\t5. Dhaka to Lahore");
+    printf("\n\t\t\t\t6. Dhaka to Beijing");
+    printf("\n\t\t\t\t7. Dhaka to Kathmandu");
+    int dest;
+    printf("\n\t\t\tEnter Your Destination or 0 to exit ");
+    scanf("%d", &dest);
+    system("cls");
+
+
+    if(dest==0)
+    {
+        printf("\n\n\t\t\t####Thanks For Using AFR####");
+        return 0;
+
+    }
+    else if(dest==1||dest==2||dest==3|| dest==4||dest==5||dest==6||dest==7)
+    {
+        return 1;
+    }
+    else
+    {
+        system("cls");
+        goto DestinationP_Line;
+    }
+}
+int Schedule()
+{
+    int sc;
+schedule_line:
+    printf("\t\t\t###########################################################################");
+    printf("\n\t\t\t############                                                   ############");
+    printf("\n\t\t\t############                Available Schedules                ############");
+    printf("\n\t\t\t############                                                   ############");
+    printf("\n\t\t\t###########################################################################");
+    printf("\n\t\t\t---------------------------------------------------------------------------\n");
+
+
+    printf("\n\t\t\t\t1. 12:00 AM");
+    printf("\n\t\t\t\t2. 02:00 AM");
+    printf("\n\t\t\t\t3. 04:00 AM");
+    printf("\n\t\t\t\t4. 06:00 AM");
+    printf("\n\t\t\t\t5. 08:00 AM");
+    printf("\n\t\t\t\t6. 10:00 AM");
+    printf("\n\t\t\t\t7. 11:00 AM");
+    printf("\n\t\t\t\t8. 12:00 PM");
+    printf("\n\t\t\t\t9. 02:00 PM");
+    printf("\n\t\t\t\t10. 04:00 PM");
+    printf("\n\t\t\t\t11. 06:00 PM");
+    printf("\n\t\t\t\t12. 08:00 PM");
+    printf("\n\t\t\t\t13. 10:00 PM");
+
+    printf("\n\n\t\t\t\tEnter Your Desired Schedule Or '0' to exit: ");
+    scanf("%d", &sc);
+    switch(sc)
+    {
+    case 1:
+        return 1;
+    case 2:
+        return 1;
+    case 3:
+        return 1;
+    case 4:
+        return 1;
+    case 5:
+        return 1;
+    case 6:
+        return 1;
+    case 7:
+        return 1;
+    case 8:
+        return 1;
+    case 9:
+        return 1;
+    case 10:
+        return 1;
+    case 11:
+        return 1;
+    case 12:
+        return 1;
+    case 13:
+        return 1;
+    case 0:
+        return 0;
+    default:
+        system("cls");
+        goto schedule_line;
+    }
+}
