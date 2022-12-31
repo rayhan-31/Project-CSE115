@@ -4,7 +4,7 @@
 #include<conio.h>
 #include<stdio.h>
 int key=0;
-
+int trackTicket=0;
 struct login
 {
     char fname[100];
@@ -55,7 +55,7 @@ verification_line:
 
     system("cls");
     int scd=0;
-    int key;
+   // int key;
 Welcome_Line:
     system("cls");
     key=WelcomeMessage();
@@ -408,6 +408,7 @@ int BuyTicket()
         scanf("%d", &con);
         if(con==1)
         {
+            trackTicket=trackTicket+numT;
             numS = numS-numT;
             system("cls");
             printf("\t\t\t###########################################################################");
@@ -441,7 +442,7 @@ int BuyTicket()
                 printf("\n\t\t\t###########################################################################");
                 printf("\n\t\t\t---------------------------------------------------------------------------\n");
 
-                printf("\n\t\t\tYour %d Tickets Have Been Successfully Cancelled..", numT);
+                printf("\n\t\t\tYour %d Tickets Have Been Successfully Cancelled..", trackTicket);
                 numS=numS+numT;
                 printf("\n\t\t\tEnter 1 To Buy Again Or 0 To Exit..");
                 scanf("%d", &a);
